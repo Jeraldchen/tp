@@ -18,11 +18,16 @@ import static seedu.duke.save.Storage.saveData;
 
 //@@author JeraldChen
 public class Information {
+    //@@author Geeeetyx
+    private static final ArrayList<String> queueList = new ArrayList<>();
+    //@@author
+
     private static final HashMap<Integer, Patient> patientsList = new HashMap<>();
 
     private static final Logger logger = Logger.getLogger(Information.class.getName());
 
     public static void storePatientInfo(int hash, Patient patient) {
+        logger.setLevel(Level.SEVERE);
         logger.log(Level.INFO, "Storing patient information");
         patientsList.put(hash, patient);
     }
@@ -33,6 +38,7 @@ public class Information {
     }
 
     //@@Geeeetyx
+
     /**
      * Prints the diagnosis history of the Patient.
      * @param hash The key to access the patient's details.
@@ -55,6 +61,7 @@ public class Information {
     }
 
     //@@author JeraldChen
+
     /**
      * Resets the diagnosis history of the patient.
      *
@@ -72,6 +79,7 @@ public class Information {
     }
 
     //@@Thunderdragon221
+
     /**
      * Checks the existence of a password in Dr Duke.
      *
@@ -94,6 +102,7 @@ public class Information {
     }
 
     //@@Thunderdragon221
+
     /**
      * Hashes the password keyed in by the user.
      * @param password password to hash.
@@ -104,6 +113,7 @@ public class Information {
     }
 
     //@@Jeraldchen
+
     /**
      * Resets the symptom choice of the patient.
      * @param symptoms The symptom choice of the patient.
@@ -123,6 +133,7 @@ public class Information {
         }
     }
     //@@author JeraldChen
+
     /**
      * Prints the symptom history of the patient.
      * @param symptoms The patient's array of symptoms to print.
@@ -138,6 +149,7 @@ public class Information {
     }
 
     //@@author Geeeetyx
+
     /**
      * Deletes a set of selected symptoms from an array containing symptoms
      * previously selected by the patient.
@@ -174,4 +186,22 @@ public class Information {
             System.out.println("Invalid number! Please enter a valid symptom number.");
         }
     }
+
+    //@@author Geeeetyx
+    public static ArrayList<String> getQueueList() {
+        return queueList;
+    }
+
+    public static void addToQueue(String password) {
+        queueList.add(password);
+    }
+
+    public static void printPatientQueueNumber() {
+        int queueNumber = queueList.size();
+        System.out.println("---------------------------------------------------");
+        System.out.println("This is your queue number");
+        System.out.println("---------------------------------------------------");
+        System.out.println(queueNumber);
+    }
+    //@@author
 }

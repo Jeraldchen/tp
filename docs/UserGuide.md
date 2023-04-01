@@ -14,14 +14,17 @@ Doctor Duke can diagnose illnesses and suggest medicine accordingly faster than 
 2. Down the latest version of **Dr Duke** from [this GitHub repo](https://github.com/AY2223S2-CS2113-W13-1/tp/releases/tag/v1.0).
 3. Download the jar file from the latest release, labelled as **Tp.main.jar**.
 4. Place the file in the folder you want to use as the home folder for your Duke.
-5. Run the jar file via double-clicking on the JAR file, or by copying the file path and entering the following
-   command into your terminal:
+5. Run the jar file via double-clicking on the JAR file, or by copying the file path and entering the copied
+   filepath command into your terminal:
 
-   ~~~
-   java -jar "C:\Users\Albert\Desktop\Tp.main.jar"
-   ~~~
+Example:
+
+~~~
+java -jar "C:\Users\Albert\Desktop\Tp.main.jar"
+~~~
 
 # Features Guide
+
 Upon starting Dr Duke, you will be greeted with a welcome message, 
 
 A menu with options for registering and/or logging in will be shown.
@@ -46,6 +49,7 @@ What would you like to do? Please enter the number:
 ## Register, Log In, Exiting
 
 ### 1. Registering
+
 A new patient can register him/herself into Doctor Duke, by keying in his/her name and a password.
 
 Format: Enter ``1`` to register.
@@ -74,6 +78,7 @@ Registration successful!
 ~~~
 
 ### Logging In
+
 Format: Press ``2`` to register.
 
 Expected outcome: 
@@ -130,15 +135,16 @@ Login successful!
 Welcome Demo!
 ---------------------------------------------------
 What would you like to do? Please enter the number:
-1. Report symptoms
-2. View diagnosis history
-3. Reset diagnosis history
-4. View symptoms History
-5. Delete symptom choice
-6. Reset symptoms
-7. View Medicine history
-8. List available medicines
-9. Find available medicine
+1.  Report symptoms
+2.  View diagnosis history
+3.  Reset diagnosis history
+4.  View symptoms History
+5.  Delete symptom choice
+6.  Reset symptoms
+7.  View Medicine history
+8.  List available medicines
+9.  Find available medicine
+10. Display Queue Number
 0. Exit
 ---------------------------------------------------
 ~~~
@@ -153,22 +159,17 @@ A list of symptoms will then be displayed to the user.
 ~~~
 ---------------------------------------------------
 What would you like to do? Please enter the number:
-1. Report symptoms
-2. View diagnosis history
-3. Reset diagnosis history
-<<<<<<< HEAD
-4. Reset symptoms
-5. View Medicine history
-7. List available medicines
-8. Find available medicines
-9. Exit
-=======
-4. View symptoms history
-5. Delete symptom choice
-6. Reset symptoms
-7. View Medicine history
-8. Exit
->>>>>>> upstream/master
+1.  Report symptoms
+2.  View diagnosis history
+3.  Reset diagnosis history
+4.  View symptoms History
+5.  Delete symptom choice
+6.  Reset symptoms
+7.  View Medicine history
+8.  List available medicines
+9.  Find available medicine
+10. Display Queue Number
+0. Exit
 ---------------------------------------------------
 1
 ---------------------------------------------------
@@ -205,10 +206,12 @@ Please enter a symptom.
 The patient will then key in his/her symptoms accordingly, by keying in 'a' for fever, 'b' for Dry cough, 
 so on and so forth, in one string or with spaces.
 
+DO NOT spell out the symptom, just choose the option.
+
 Both forms yield the same expected result.
 
 Expected outcome:
-~~~
+```
 Please enter a symptom.
 ---------------------------------------------------
 abc
@@ -216,8 +219,9 @@ Do you have any other symptoms? [Y/N]
 n
 Your entered symptoms are: 
 [FEVER, DRY_COUGH, COUGH_WITH_PHLEGM]
-~~~
-~~~
+```
+OR
+```
 Please enter a symptom.
 ---------------------------------------------------
 a b c
@@ -225,16 +229,16 @@ Do you have any other symptoms? [Y/N]
 n
 Your entered symptoms are: 
 [FEVER, DRY_COUGH, COUGH_WITH_PHLEGM]
-~~~
+```
 
-The patient may key in ``Y`` or ``y`` to continue reporting symptoms.
+The patient may key in `Y` or `y`to continue reporting symptoms. Once the patient is finished reporting their symptoms, they can type `N` or `n` to finish reporting their symptoms.
 
 After reporting their symptoms, Doctor Duke will then diagnose the patient, by:
-1. showing what illness the patient might have,
-2. and then displaying what medicine the patient should consume.
+1. Showing what illness the patient might have,
+2. Displaying what medicine the patient should consume.
 
 Expected Outcome:
-~~~
+```
 Please enter a symptom.
 ---------------------------------------------------
 a b c
@@ -252,7 +256,7 @@ Medication for: Sore Throat
 Medication for: Fever
     Paracetamol / Dosage: 1 or 2 pills up to 3 times a day
 ---------------------------------------------------
-~~~
+```
 
 ### 2. View Diagnosis History
 The patient can view his/her diagnosis history.
@@ -263,15 +267,16 @@ Expected outcome:
 ```
 ---------------------------------------------------
 What would you like to do? Please enter the number:
-1. Report symptoms
-2. View diagnosis history
-3. Reset diagnosis history
-4. View symptoms History
-5. Delete symptom choice
-6. Reset symptoms
-7. View Medicine history
-8. List available medicines
-9. Find available medicine
+1.  Report symptoms
+2.  View diagnosis history
+3.  Reset diagnosis history
+4.  View symptoms History
+5.  Delete symptom choice
+6.  Reset symptoms
+7.  View Medicine history
+8.  List available medicines
+9.  Find available medicine
+10. Display Queue Number
 0. Exit
 ---------------------------------------------------
 2
@@ -294,15 +299,16 @@ Expected outcome:
 ```
 ---------------------------------------------------
 What would you like to do? Please enter the number:
-1. Report symptoms
-2. View diagnosis history
-3. Reset diagnosis history
-4. View symptoms History
-5. Delete symptom choice
-6. Reset symptoms
-7. View Medicine history
-8. List available medicines
-9. Find available medicine
+1.  Report symptoms
+2.  View diagnosis history
+3.  Reset diagnosis history
+4.  View symptoms History
+5.  Delete symptom choice
+6.  Reset symptoms
+7.  View Medicine history
+8.  List available medicines
+9.  Find available medicine
+10. Display Queue Number
 0. Exit
 ---------------------------------------------------
 3
@@ -310,15 +316,16 @@ What would you like to do? Please enter the number:
 Your diagnosis history has been reset.
 ---------------------------------------------------
 What would you like to do? Please enter the number:
-1. Report symptoms
-2. View diagnosis history
-3. Reset diagnosis history
-4. View symptoms History
-5. Delete symptom choice
-6. Reset symptoms
-7. View Medicine history
-8. List available medicines
-9. Find available medicine
+1.  Report symptoms
+2.  View diagnosis history
+3.  Reset diagnosis history
+4.  View symptoms History
+5.  Delete symptom choice
+6.  Reset symptoms
+7.  View Medicine history
+8.  List available medicines
+9.  Find available medicine
+10. Display Queue Number
 0. Exit
 ---------------------------------------------------
 2
@@ -402,15 +409,16 @@ Login successful!
 Welcome Demo!
 ---------------------------------------------------
 What would you like to do? Please enter the number:
-1. Report symptoms
-2. View diagnosis history
-3. Reset diagnosis history
-4. View symptoms History
-5. Delete symptom choice
-6. Reset symptoms
-7. View Medicine history
-8. List available medicines
-9. Find available medicine
+1.  Report symptoms
+2.  View diagnosis history
+3.  Reset diagnosis history
+4.  View symptoms History
+5.  Delete symptom choice
+6.  Reset symptoms
+7.  View Medicine history
+8.  List available medicines
+9.  Find available medicine
+10. Display Queue Number
 0. Exit
 ---------------------------------------------------
 6
@@ -422,15 +430,16 @@ Else, expected outcome after entering some symptoms:
 ~~~
 ---------------------------------------------------
 What would you like to do? Please enter the number:
-1. Report symptoms
-2. View diagnosis history
-3. Reset diagnosis history
-4. View symptoms History
-5. Delete symptom choice
-6. Reset symptoms
-7. View Medicine history
-8. List available medicines
-9. Find available medicine
+1.  Report symptoms
+2.  View diagnosis history
+3.  Reset diagnosis history
+4.  View symptoms History
+5.  Delete symptom choice
+6.  Reset symptoms
+7.  View Medicine history
+8.  List available medicines
+9.  Find available medicine
+10. Display Queue Number
 0. Exit
 ---------------------------------------------------
 6
@@ -449,15 +458,16 @@ Expected outcome:
 ~~~
 ---------------------------------------------------
 What would you like to do? Please enter the number:
-1. Report symptoms
-2. View diagnosis history
-3. Reset diagnosis history
-4. View symptoms History
-5. Delete symptom choice
-6. Reset symptoms
-7. View Medicine history
-8. List available medicines
-9. Find available medicine
+1.  Report symptoms
+2.  View diagnosis history
+3.  Reset diagnosis history
+4.  View symptoms History
+5.  Delete symptom choice
+6.  Reset symptoms
+7.  View Medicine history
+8.  List available medicines
+9.  Find available medicine
+10. Display Queue Number
 0. Exit
 ---------------------------------------------------
 7
@@ -476,15 +486,16 @@ Expected outcome:
 ~~~
 ---------------------------------------------------
 What would you like to do? Please enter the number:
-1. Report symptoms
-2. View diagnosis history
-3. Reset diagnosis history
-4. View symptoms History
-5. Delete symptom choice
-6. Reset symptoms
-7. View Medicine history
-8. List available medicines
-9. Find available medicine
+1.  Report symptoms
+2.  View diagnosis history
+3.  Reset diagnosis history
+4.  View symptoms History
+5.  Delete symptom choice
+6.  Reset symptoms
+7.  View Medicine history
+8.  List available medicines
+9.  Find available medicine
+10. Display Queue Number
 0. Exit
 ---------------------------------------------------
 8
@@ -540,6 +551,54 @@ Ultracarbon
 ~~~
 
 [comment]: <> (//@@author Geeeetyx)
+### 10. Viewing your Queue Number
+When a user logs in, he/she is assigned a queue number.
+
+As of v2.1, this queue number feature is only a basic feature. With more work it could be further integrated with
+an actual pharmercy to manage the queue of patients.
+
+Format: Enter `10` to view your queue number.
+~~~
+---------------------------------------------------
+Login successful!
+Welcome Demo!
+---------------------------------------------------
+What would you like to do? Please enter the number:
+1.  Report symptoms
+2.  View diagnosis history
+3.  Reset diagnosis history
+4.  View symptoms History
+5.  Delete symptom choice
+6.  Reset symptoms
+7.  View Medicine history
+8.  List available medicines
+9.  Find available medicine
+10. Display Queue Number
+0. Exit
+---------------------------------------------------
+10
+---------------------------------------------------
+This is your queue number
+---------------------------------------------------
+7
+---------------------------------------------------
+What would you like to do? Please enter the number:
+1.  Report symptoms
+2.  View diagnosis history
+3.  Reset diagnosis history
+4.  View symptoms History
+5.  Delete symptom choice
+6.  Reset symptoms
+7.  View Medicine history
+8.  List available medicines
+9.  Find available medicine
+10. Display Queue Number
+0. Exit
+---------------------------------------------------
+~~~
+
+
+
 ### 0. Exiting Doctor Duke
 Once the patient is done with the program, he/she can exit the program.
 
@@ -549,15 +608,16 @@ Expected outcome:
 ~~~
 ---------------------------------------------------
 What would you like to do? Please enter the number:
-1. Report symptoms
-2. View diagnosis history
-3. Reset diagnosis history
-4. View symptoms History
-5. Delete symptom choice
-6. Reset symptoms
-7. View Medicine history
-8. List available medicines
-9. Find available medicine
+1.  Report symptoms
+2.  View diagnosis history
+3.  Reset diagnosis history
+4.  View symptoms History
+5.  Delete symptom choice
+6.  Reset symptoms
+7.  View Medicine history
+8.  List available medicines
+9.  Find available medicine
+10. Display Queue Number
 0. Exit
 ---------------------------------------------------
 0

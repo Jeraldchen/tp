@@ -1,21 +1,10 @@
 49
 Demo
-11
-Bronchitis
-Sore Throat
-Fever
-Headache
-Sore Throat
-Fever
-Sore Throat
-Fever
-Sore Throat
-Fever
-COVID-19
-2
-2023/03/23 Ultracarbon Paracetamol Ibuprofen Aspirin Robitussin Magnesium 
-2023/03/25 Paracetamol Lozenges Guaifenesin Ibuprofen 
+0
+1
+2023/03/31 Guaifenesin Ibuprofen Lozenges Paracetamol Naproxen 
 50
-sjfnsdkl
+Demo
 0
 0
+
