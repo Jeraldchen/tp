@@ -18,6 +18,7 @@ import static seedu.duke.save.Storage.saveData;
 
 //@@author JeraldChen
 public class Information {
+
     //@@author Geeeetyx
     private static final ArrayList<String> queueList = new ArrayList<>();
     //@@author

@@ -44,9 +44,6 @@ import seedu.duke.diagnosis.symptoms.Symptom;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import static java.util.stream.Collectors.toCollection;
 /**
  * This class conducts the diagnosis by taking in the patient's symptoms and returning the most probable illnesses based
@@ -101,7 +98,6 @@ public class Diagnosis {
                     new GeneralFlu()
             )
     );
-    private static Logger diagnosisLogger = Logger.getLogger("diagnosisLogger");
 
     /**
      * @author Brennanzuz
@@ -125,17 +121,12 @@ public class Diagnosis {
      * @return An ArrayList of IllnessMatch which indicates the most probable Illness and its similarity percentage.
      */
     public static ArrayList<IllnessMatch> getPossibleIllnesses(ArrayList<Symptom> patientSymptoms) {
-        diagnosisLogger.log(Level.INFO, "Receiving patient symptoms for diagnosis.");
         ArrayList<IllnessMatch> possibleIllnesses = new ArrayList<>();
         IllnessMatch illnessMatch;
         for (Illness illness : ALL_ILLNESSES) {
             assert illness.getSymptoms().size() > 0 : illness.getIllnessName() + " should have symptoms listed";
             illnessMatch = new IllnessMatch(illness, (double) getMatchingSymptoms(patientSymptoms,
                     illness.getSymptoms()).size() / illness.getSymptoms().size());
-            diagnosisLogger.log(Level.INFO, "Compared patient's symptoms to those of " +
-                    illnessMatch.getIllness().getIllnessName() +
-                    " and found a " + illnessMatch.getSimilarityPercentage() * 100 +
-                    "% match.");
             possibleIllnesses.add(illnessMatch);
         }
         return possibleIllnesses.stream()
